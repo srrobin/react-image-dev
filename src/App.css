@@ -1,38 +1,195 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800&display=swap');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:hover { text-decoration: none }
+a:focus { outline: 0 solid; text-decoration: none}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input:focus, button:focus, textarea:focus, a:focus {outline: none}
+h1,h2,h3,h4,h5,h6 {
+    
+    font-weight: 700;
+}
+p:last-child {
+    margin-bottom: 0
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{ 
+ font-family: 'Darker Grotesque';
+ font-size: 18px;
+}
+a.logo {
+  color: #388E8E;
+  font-size: 28px;
+  font-weight: 700;
+}
+.mainmenu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.mainmenu li {
+    display: inline-block; }
+.mainmenu li a {
+    color: #000;
+    display: block;
+    padding: 8px;
+    text-transform: uppercase;
+	position:relative;
+}
+.mainmenu li a:hover:after {
+    background-color: #388E8E;
+    bottom: 4px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    width: 40px;
+	margin-left:-20px;
+	
+}
+input[type="text"] {
+    border: 1px solid #388E8E;
+    padding: 3px 10px;
+}
+input[type="submit"] {
+  background-color: #388E8E;
+  border: medium none;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  font-weight: 700;
+  margin-right: 14px;
+  padding: 4px 25px;
+}
+header.header {
+  padding: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h4 {
+    font-weight: 900;
+    color:#008080;
+}
+.top-text{ 
+    margin-bottom:40px;
+   }
+.content-block {
+    padding: 70px 0;
+}
+.single-photo-item h5 {
+    color: #388E8E;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.single-photo-item a {
+    color: #388E8E;
+}
+.photo-wrapper {
+    height: 200px;
+}
+
+.photo-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p.cat-name {
+  margin-bottom: 40px;
+  opacity: 0.6;
+}
+
+.footermenu {
+    margin-bottom: 50px;
+}
+
+.footermenu ul {
+    padding: 0;
+    margin: 0;
+    list-style: nome;
+}
+
+.footermenu li {
+    display: inline-block;
+}
+
+.footermenu a {
+  color: #000;
+  margin: 10px 0px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footermenu a:hover {
+color:#388E8E;
+ font-size: 16px;
+}
+.copyright-text {
+  color:#388E8E;
+  margin: 30px 0;
+   font-weight: 600;
+}
+
+
+.photo-img-n {
+    height: 800px;
+    background-color: #ddd
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .photo-img-n img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
-  to {
-    transform: rotate(360deg);
+  .photo-single-wrapper {
+    position: relative;
+    margin-top: 30px;
   }
+  
+  .photo-single-info {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    background: #fff;
+    padding: 30px;
+    font-size: 20px;
+  }
+  .photo-single-info ul {
+    font-size: 85%;
+    margin-bottom: 5px;
+    padding: 0;
+    list-style: none;
+  }
+  .photo-single-info li {
+    border-bottom: 1px solid #ddd;
+  }
+
+
+  a.d-btn {
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #fff;
+    padding: 0px 9px;
+    font-size: 17px;
+    font-weight: 500;
 }
+  
+
+
+
+
+
